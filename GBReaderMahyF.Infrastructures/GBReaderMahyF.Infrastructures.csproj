@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\GBReaderMahyF.Domains\GBReaderMahyF.Domains.csproj" />
+      <ProjectReference Include="..\GBReaderMahyF.Infrastructures.Dto\GBReaderMahyF.Infrastructures.Dto.csproj" />
+      <ProjectReference Include="..\GBReaderMahyF.Infrastructures.Mapper\GBReaderMahyF.Infrastructures.Mapper.csproj" />
+      <ProjectReference Include="..\GBReaderMahyF.Repositories\GBReaderMahyF.Repositories.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AdditionalFiles Include="../CodeMetricsConfig.txt" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Domains\bin\Debug\net6.0\GBReaderMahyF.Domains.deps.json
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Domains\bin\Debug\net6.0\GBReaderMahyF.Domains.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Domains\bin\Debug\net6.0\GBReaderMahyF.Domains.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Domains\obj\Debug\net6.0\GBReaderMahyF.Domains.csproj.AssemblyReference.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Domains\obj\Debug\net6.0\GBReaderMahyF.Domains.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Domains\obj\Debug\net6.0\GBReaderMahyF.Domains.AssemblyInfoInputs.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Domains\obj\Debug\net6.0\GBReaderMahyF.Domains.AssemblyInfo.cs
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Domains\obj\Debug\net6.0\GBReaderMahyF.Domains.csproj.CoreCompileInputs.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Domains\obj\Debug\net6.0\GBReaderMahyF.Domains.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Domains\obj\Debug\net6.0\refint\GBReaderMahyF.Domains.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Domains\obj\Debug\net6.0\GBReaderMahyF.Domains.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Domains\obj\Debug\net6.0\ref\GBReaderMahyF.Domains.dll

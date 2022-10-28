@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>GBReaderMahyF.Repository</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\GBReaderMahyF.Domains\GBReaderMahyF.Domains.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AdditionalFiles Include="../CodeMetricsConfig.txt" />
+    </ItemGroup>
+
+</Project>

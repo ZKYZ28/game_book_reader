@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GBReaderMahyF.Repository.Mapping/1.0.0": {
+        "dependencies": {
+          "GBReaderMahyF.Domains": "1.0.0",
+          "GBReaderMahyF.Repository.Dto": "1.0.0"
+        },
+        "runtime": {
+          "GBReaderMahyF.Repository.Mapping.dll": {}
+        }
+      },
+      "GBReaderMahyF.Domains/1.0.0": {
+        "runtime": {
+          "GBReaderMahyF.Domains.dll": {}
+        }
+      },
+      "GBReaderMahyF.Repository.Dto/1.0.0": {
+        "runtime": {
+          "GBReaderMahyF.Repository.Dto.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GBReaderMahyF.Repository.Mapping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GBReaderMahyF.Domains/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GBReaderMahyF.Repository.Dto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

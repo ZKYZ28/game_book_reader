@@ -1,0 +1,17 @@
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\bin\Debug\net6.0\GBReaderMahyF.Repository.Mapping.deps.json
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\bin\Debug\net6.0\GBReaderMahyF.Repository.Mapping.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\bin\Debug\net6.0\GBReaderMahyF.Repository.Mapping.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\bin\Debug\net6.0\GBReaderMahyF.Domains.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\bin\Debug\net6.0\GBReaderMahyF.Repository.Dto.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\bin\Debug\net6.0\GBReaderMahyF.Domains.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\bin\Debug\net6.0\GBReaderMahyF.Repository.Dto.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\obj\Debug\net6.0\GBReaderMahyF.Repository.Mapping.csproj.AssemblyReference.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\obj\Debug\net6.0\GBReaderMahyF.Repository.Mapping.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\obj\Debug\net6.0\GBReaderMahyF.Repository.Mapping.AssemblyInfoInputs.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\obj\Debug\net6.0\GBReaderMahyF.Repository.Mapping.AssemblyInfo.cs
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\obj\Debug\net6.0\GBReaderMahyF.Repository.Mapping.csproj.CoreCompileInputs.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\obj\Debug\net6.0\GBReaderMahyF.Repository.Mapping.csproj.CopyComplete
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\obj\Debug\net6.0\GBReaderMahyF.Repository.Mapping.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\obj\Debug\net6.0\refint\GBReaderMahyF.Repository.Mapping.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\obj\Debug\net6.0\GBReaderMahyF.Repository.Mapping.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repository.Mapping\obj\Debug\net6.0\ref\GBReaderMahyF.Repository.Mapping.dll

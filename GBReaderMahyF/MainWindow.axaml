@@ -1,0 +1,62 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="450"
+        x:Class="GBReaderMahyF.MainWindow"
+        Title="Ai 2022-2023 Mahy François">
+        
+        <StackPanel Background="#edf2f4">
+                
+                <!--TITRE --> 
+                <TextBlock  
+                        Padding="15"
+                        Background="#2b2d42"
+                        Foreground="#edf2f4"
+                        FontSize="35">
+                        Vos livres 
+                </TextBlock>    
+                
+                <!--NAVBAR--> 
+                <Grid ColumnDefinitions="350,140" Margin="0 25">
+                        <TextBox x:Name="SearchText" 
+                                 Grid.Column="0" 
+                                 Margin=" 15 0" />
+                        
+                        
+                        <Button Grid.Column="1" 
+                                Click="Search_OnClick"
+                                HorizontalContentAlignment="Center" 
+                                Background="#2b2d42"
+                                Foreground="#edf2f4"
+                                Padding="5">
+                                Recherche un livre
+                        </Button>
+                </Grid>
+                
+                
+                
+                <!--MAIN --> 
+                <Grid ColumnDefinitions="*, *">
+                        <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto"  Height="500">
+                                <WrapPanel x:Name="BooksContainer"></WrapPanel>
+                        </ScrollViewer>
+                        
+                        <!--ERRORMESSAGE --> 
+                        <TextBlock x:Name = "ErrorMessage" HorizontalAlignment="Center" FontSize="24" Foreground="#F9564F" />
+                        
+                        <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center">
+                                <TextBlock x:Name="DetailTitle" Foreground="#2b2d42" FontSize="20" Margin="15" IsVisible="False">
+                                        Détail du livre :
+                                </TextBlock>
+                                
+                                <StackPanel x:Name="DetailBookContainer" 
+                                            Margin="50 0"
+                                />
+                                
+                        </StackPanel>
+                </Grid>
+                
+        </StackPanel>
+   
+</Window>

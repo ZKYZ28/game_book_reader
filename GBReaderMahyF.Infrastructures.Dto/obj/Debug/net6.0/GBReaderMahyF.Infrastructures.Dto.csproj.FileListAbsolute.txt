@@ -1,0 +1,12 @@
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures.Dto\bin\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.deps.json
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures.Dto\bin\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures.Dto\bin\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures.Dto\obj\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.csproj.AssemblyReference.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures.Dto\obj\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures.Dto\obj\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.AssemblyInfoInputs.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures.Dto\obj\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.AssemblyInfo.cs
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures.Dto\obj\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.csproj.CoreCompileInputs.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures.Dto\obj\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures.Dto\obj\Debug\net6.0\refint\GBReaderMahyF.Infrastructures.Dto.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures.Dto\obj\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures.Dto\obj\Debug\net6.0\ref\GBReaderMahyF.Infrastructures.Dto.dll

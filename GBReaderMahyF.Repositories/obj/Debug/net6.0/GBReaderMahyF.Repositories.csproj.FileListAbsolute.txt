@@ -1,0 +1,15 @@
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\bin\Debug\net6.0\GBReaderMahyF.Repositories.deps.json
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\bin\Debug\net6.0\GBReaderMahyF.Repositories.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\bin\Debug\net6.0\GBReaderMahyF.Repositories.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\bin\Debug\net6.0\GBReaderMahyF.Domains.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\bin\Debug\net6.0\GBReaderMahyF.Domains.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\obj\Debug\net6.0\GBReaderMahyF.Repositories.csproj.AssemblyReference.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\obj\Debug\net6.0\GBReaderMahyF.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\obj\Debug\net6.0\GBReaderMahyF.Repositories.AssemblyInfoInputs.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\obj\Debug\net6.0\GBReaderMahyF.Repositories.AssemblyInfo.cs
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\obj\Debug\net6.0\GBReaderMahyF.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\obj\Debug\net6.0\GBReaderMahyF.Repositories.csproj.CopyComplete
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\obj\Debug\net6.0\GBReaderMahyF.Repositories.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\obj\Debug\net6.0\refint\GBReaderMahyF.Repositories.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\obj\Debug\net6.0\GBReaderMahyF.Repositories.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Repositories\obj\Debug\net6.0\ref\GBReaderMahyF.Repositories.dll

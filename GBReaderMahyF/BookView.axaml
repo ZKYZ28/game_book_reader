@@ -1,0 +1,40 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="200" d:DesignHeight="200"
+             x:Class="GBReaderMahyF.BookView">
+            
+    <Border Background="#2b2d42"
+            BorderBrush="Black"
+            BorderThickness="3"
+            CornerRadius="15"
+            Padding="15"
+            Margin="25">
+        
+        <StackPanel 
+                Orientation="Vertical" 
+                Background="#2b2d42" 
+                Spacing="15" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center" 
+                PointerPressed="DetailBook_OnClick">
+                
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Foreground="#edf2f4">Titre : </TextBlock> 
+                    <TextBlock x:Name ="Title"  Foreground="#edf2f4" TextWrapping="Wrap" Width="250"></TextBlock>
+                </StackPanel>
+               
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock  Foreground="#edf2f4" > Auteur : </TextBlock> 
+                    <TextBlock x:Name ="Author"  Foreground="#edf2f4" ></TextBlock>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Foreground="#edf2f4">Isbn : </TextBlock> 
+                    <TextBlock x:Name ="Isbn" Foreground="#edf2f4"></TextBlock>
+                </StackPanel>
+            </StackPanel>
+        
+        </Border>
+</UserControl>

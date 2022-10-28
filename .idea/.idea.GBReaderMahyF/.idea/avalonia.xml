@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="GBReaderMahyF/App.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
+        <entry key="GBReaderMahyF/BookView.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
+        <entry key="GBReaderMahyF/DetailBookView.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
+        <entry key="GBReaderMahyF/MainWindow.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>GBReaderMahyF.Repository.Dto</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AdditionalFiles Include="../CodeMetricsConfig.txt" />
+    </ItemGroup>
+    
+</Project>

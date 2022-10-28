@@ -1,0 +1,17 @@
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\bin\Debug\net6.0\GBReaderMahyF.Infrastrucures.Mapper.deps.json
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\bin\Debug\net6.0\GBReaderMahyF.Infrastrucures.Mapper.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\bin\Debug\net6.0\GBReaderMahyF.Infrastrucures.Mapper.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\bin\Debug\net6.0\GBReaderMahyF.Domains.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\bin\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\bin\Debug\net6.0\GBReaderMahyF.Domains.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\bin\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\obj\Debug\net6.0\GBReaderMahyF.Infrastrucures.Mapper.csproj.AssemblyReference.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\obj\Debug\net6.0\GBReaderMahyF.Infrastrucures.Mapper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\obj\Debug\net6.0\GBReaderMahyF.Infrastrucures.Mapper.AssemblyInfoInputs.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\obj\Debug\net6.0\GBReaderMahyF.Infrastrucures.Mapper.AssemblyInfo.cs
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\obj\Debug\net6.0\GBReaderMahyF.Infrastrucures.Mapper.csproj.CoreCompileInputs.cache
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\obj\Debug\net6.0\GBReaderMahyF.Infrastrucures.Mapper.csproj.CopyComplete
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\obj\Debug\net6.0\GBReaderMahyF.Infrastrucures.Mapper.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\obj\Debug\net6.0\refint\GBReaderMahyF.Infrastrucures.Mapper.dll
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\obj\Debug\net6.0\GBReaderMahyF.Infrastrucures.Mapper.pdb
+C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastrucures.Mapper\obj\Debug\net6.0\ref\GBReaderMahyF.Infrastrucures.Mapper.dll
