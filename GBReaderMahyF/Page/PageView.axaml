@@ -1,0 +1,128 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="GBReaderMahyF.PageView">
+    
+        <StackPanel Background="#edf2f4">
+                    
+            <!--TITRE --> 
+            <TextBlock  
+                Padding="15"
+                Background="#2b2d42"
+                Foreground="#edf2f4"
+                FontSize="35">
+                Lecture du livre 
+            </TextBlock>    
+                    
+                    
+            <!--MAIN -->     
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <Grid ColumnDefinitions="*, *">
+                     <!--TEXT PAGE TITLE -->
+                    <TextBlock  
+                        Grid.Row="0" Grid.Column="0"
+                        HorizontalAlignment="Right"
+                        Padding="15"
+                        Foreground="#2b2d42"
+                        FontSize="25"
+                        TextAlignment="Center">
+                        Page 
+                    </TextBlock> 
+                    
+                    <TextBlock  
+                        x:Name="NumPage"
+                        Grid.Row="0" Grid.Column="1"
+                        HorizontalAlignment="Left"
+                        Padding="15"
+                        Foreground="#2b2d42"
+                        FontSize="25"
+                        TextAlignment="Center">
+                         
+                    </TextBlock> 
+                </Grid>
+                            
+                <!--TEXT PAGE CONTENT -->
+                <TextBlock  x:Name="TextPage"
+                    Padding="0 0 0 50"
+                    Foreground="#2b2d42"
+                    FontSize="18"
+                    TextAlignment="Center">
+                   
+                </TextBlock>   
+                              
+                <!--LIST CHOICE TITLE -->
+                <TextBlock  
+                    Padding="15"
+                    Foreground="#2b2d42"
+                    FontSize="25"
+                    TextAlignment="Center">
+                    Liste des choix
+                </TextBlock>   
+                            
+                <!--LIST CHOICE CONTAINER -->
+                <ScrollViewer VerticalScrollBarVisibility="Auto"  Height="300" VerticalContentAlignment="Top">
+                    <ListBox SelectionChanged="Choice_OnClick" HorizontalAlignment="Center" VerticalAlignment="Center" AutoScrollToSelectedItem="True" x:Name="ListChoices" Background="#edf2f4">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Border  CornerRadius="4" Padding="4" Background="#2b2d42" Margin="15">
+                                    <TextBlock Text="{Binding}"   TextAlignment="Center" 
+                                               Foreground="#edf2f4"
+                                               Padding="5"/>
+                                </Border>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </ScrollViewer>
+                
+                <Button
+                    Click="StopReading_OnClick"
+                    Margin="0 10 0  0"
+                    x:Name="StopReading"
+                    IsVisible="True"
+                    HorizontalContentAlignment="Center" 
+                    HorizontalAlignment="Center"
+                    Background="#2b2d42"
+                    Foreground="#edf2f4"
+                    Padding="5">
+                    Interrompre la lecture
+                </Button>
+                
+                
+                <TextBlock x:Name="TextEndBook"
+                           IsVisible="False"
+                           HorizontalAlignment="Center"
+                           Foreground="#2b2d42"
+                           Padding="0 25"
+                           FontSize="22">
+                   Livre terminé.
+                </TextBlock>
+                
+                <Button
+                        Click="BackListBook_OnClick"
+                        x:Name="BackToListBook"
+                        IsVisible="False"
+                        HorizontalContentAlignment="Center" 
+                        HorizontalAlignment="Center"
+                        Background="#2b2d42"
+                        Foreground="#edf2f4"
+                        Padding="5">
+                    Retour à la liste des livres
+                </Button>
+                
+                <Button 
+                        Click="Restart_OnClick"
+                        x:Name="RestartBook"
+                        IsVisible="False"
+                        HorizontalContentAlignment="Center" 
+                        HorizontalAlignment="Center"
+                        Background="#2b2d42"
+                        Foreground="#edf2f4"
+                        Padding="5">
+                    Recommencer la lecture
+                </Button>
+                
+            </StackPanel> 
+        </StackPanel>
+</UserControl>

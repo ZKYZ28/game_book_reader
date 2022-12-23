@@ -4,15 +4,26 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\GBReaderMahyF.Domains\GBReaderMahyF.Domains.csproj" />
-      <ProjectReference Include="..\GBReaderMahyF.Presentations\GBReaderMahyF.Presentations.csproj" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+        <PackageReference Include="Moq" Version="4.18.3" />
+        <PackageReference Include="NUnit" Version="3.13.3" />
+        <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+        <PackageReference Include="NUnit.Analyzers" Version="3.3.0" />
+        <PackageReference Include="coverlet.collector" Version="3.1.2" />
     </ItemGroup>
 
     <ItemGroup>
-        <AdditionalFiles Include="../CodeMetricsConfig.txt" />
+      <ProjectReference Include="..\GBReaderMahyF.Domains\GBReaderMahyF.Domains.csproj" />
+      <ProjectReference Include="..\GBReaderMahyF.Infrastructures\GBReaderMahyF.Infrastructures.csproj" />
     </ItemGroup>
+
+      <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>8602;8603;8604;8618</NoWarn>
+  </PropertyGroup>
 
 </Project>

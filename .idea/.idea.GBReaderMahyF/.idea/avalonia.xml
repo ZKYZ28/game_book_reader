@@ -3,10 +3,18 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="GBReaderMahyF.Avalonia/Control/BookView.axaml" value="GBReaderMahyF.Avalonia/GBReaderMahyF.Avalonia.csproj" />
         <entry key="GBReaderMahyF/App.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
         <entry key="GBReaderMahyF/BookView.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
+        <entry key="GBReaderMahyF/Control/BookView.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
+        <entry key="GBReaderMahyF/Control/StatisticView.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
         <entry key="GBReaderMahyF/DetailBookView.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
+        <entry key="GBReaderMahyF/MainView.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
         <entry key="GBReaderMahyF/MainWindow.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
+        <entry key="GBReaderMahyF/Page/MenuView.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
+        <entry key="GBReaderMahyF/Page/PageView.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
+        <entry key="GBReaderMahyF/Page/StatisticsView.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
+        <entry key="GBReaderMahyF/PageView.axaml" value="GBReaderMahyF/GBReaderMahyF.csproj" />
       </map>
     </option>
   </component>

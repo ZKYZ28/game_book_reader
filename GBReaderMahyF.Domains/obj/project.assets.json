@@ -1,14 +1,56 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Lcom.Analyzer/1.0.0.1": {
+        "type": "package"
+      },
+      "Ncss.Analyzer/1.0.0": {
+        "type": "package"
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Lcom.Analyzer/1.0.0.1": {
+      "sha512": "F714fD5x9gX0WkX+bFYgapB8lZEer8F82QtPrqoOIoeFZkmCuP3tgsSfbIQ0rwdmmasK3zkakcdecbILcH4OLg==",
+      "type": "package",
+      "path": "lcom.analyzer/1.0.0.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/Lcom.Analyzer.dll",
+        "lcom.analyzer.1.0.0.1.nupkg.sha512",
+        "lcom.analyzer.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "Ncss.Analyzer/1.0.0": {
+      "sha512": "BNRXKCUjpUCv1Trkq0hy9hGT2ymRMNuyiWpqI7IApecr9D3YjFDa1G0JNPf+33D58F0YCNhusOsyD3+nBsAL0g==",
+      "type": "package",
+      "path": "ncss.analyzer/1.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/Ncss.Analyzer.dll",
+        "ncss.analyzer.1.0.0.nupkg.sha512",
+        "ncss.analyzer.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Lcom.Analyzer >= 1.0.0.1",
+      "Ncss.Analyzer >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\franc\\.nuget\\packages\\": {}
+    "C:\\Users\\franc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -19,13 +61,20 @@
       "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\franc\\Desktop\\HELMO\\AI\\AI-2022-2023-C#\\GBReaderMahyF\\GBReaderMahyF.Domains\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -43,6 +92,20 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "Lcom.Analyzer": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.0.0.1, )"
+          },
+          "Ncss.Analyzer": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -59,7 +122,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

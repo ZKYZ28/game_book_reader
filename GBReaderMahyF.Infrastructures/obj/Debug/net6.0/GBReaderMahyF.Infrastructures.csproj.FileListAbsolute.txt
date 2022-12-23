@@ -15,7 +15,3 @@ C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infr
 C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures\obj\Debug\net6.0\refint\GBReaderMahyF.Infrastructures.dll
 C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures\obj\Debug\net6.0\GBReaderMahyF.Infrastructures.pdb
 C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures\obj\Debug\net6.0\ref\GBReaderMahyF.Infrastructures.dll
-C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures\bin\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.dll
-C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures\bin\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.pdb
-C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures\bin\Debug\net6.0\GBReaderMahyF.Infrastructures.Mapper.dll
-C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Infrastructures\bin\Debug\net6.0\GBReaderMahyF.Infrastructures.Mapper.pdb

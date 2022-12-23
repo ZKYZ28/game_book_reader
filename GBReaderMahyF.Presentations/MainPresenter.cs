@@ -1,114 +1,72 @@
-﻿using System;
-using GBReaderMahyF.Respositories;
-using GBReaderMahyF.Domains;
+﻿using GBReaderMahyF.Presentations.Notification;
 
-namespace GBReaderMahyF.Presentations
+namespace GBReaderMahyF.Presentations;
+
+public class MainPresenter
 {
-    public class MainPresenter
+    private readonly MenuPresenter _menuPresenter;
+    private readonly PagePresenter _pagePresenter;
+    private readonly StatisticsPresenter _statisticsPresenter;
+    private readonly IShowNotifications _notifications;
+
+    /// <summary>
+    /// Constructeur du MainPresenter
+    /// </summary>
+    /// <param name="menuPresenter">Menupresenter qui est le presenter de la vue de base</param>
+    /// <param name="pagePresenter">PagePresenter qui est le presenter de la vue de la page</param>
+    /// <param name="statisticsPresenter">StatisticsPresenter qui est le presenter de la vue des statistiques</param>
+    /// <param name="notifications">IShowNotifications qui permet d'afficher une notification à l'utilisateur</param>
+    public MainPresenter(MenuPresenter menuPresenter, PagePresenter pagePresenter, StatisticsPresenter statisticsPresenter, IShowNotifications notifications)
     {
-        private IView _mainWindow;
-        private IManagerRepository IRepo;
+        this._menuPresenter = menuPresenter;
+        this._pagePresenter = pagePresenter;
+        this._statisticsPresenter = statisticsPresenter;
+        this._notifications = notifications;
         
-        /// <summary>
-        /// Constructeur du MainPresenter
-        /// </summary>
-        /// <param name="mainWindow">IView qui est l'Interface implémentée par mainWindow</param>
-        /// <param name="IRepo">IRepo qui est l'Interface implémentée par ManagerRepository </param>
-        public MainPresenter(IView mainWindow, IManagerRepository IRepo)
-        {
-            mainWindow.setPresenter(this);
-            this._mainWindow = mainWindow;
-            this.IRepo = IRepo;
-            SetupMainWindow();
-        }
+        menuPresenter.MainPresenter = this;
+        pagePresenter.MainPresenter = this;
+    }
 
-        public IManagerRepository getIReop()
-        {
-            return this.IRepo;
-        }
-        
-        /// <summary>
-        ///Méthode qui permet de mettre en place la mainWindow
-        /// Si il y a des erreurs elles seront affichées et l'application sera quittée après 3secondes
-        /// Sinon on affichera l'ensemble des livres lus ainsi que la vue détaillée du premier livre
-        /// </summary>
-        private void SetupMainWindow()
-        {
-            if (!FindError())
-            {
-                _mainWindow.DisplayAllBooks(IRepo.ReadBooks());
-                _mainWindow.DisplayFirstDetailBook();
-            }
-            else
-            {
-                Task.Delay(3000).ContinueWith(t =>  Environment.Exit(0));
-            }
-        }
+    /// <summary>
+    /// Méthode utilisée lorsque l'on souhaite commencer à lire un livre
+    /// Utilise la méthode InitPages du PagePresenter qui permet d'initialiser le début de lecture d'un livre
+    /// </summary>
+    public void StartReadingBook()
+    {
+        _pagePresenter.InitPages();;
+    }
 
-        /// <summary>
-        /// Méthode qui permet de rechercher un livre sur base d'une chaine de caractères et de les afficher
-        /// Si toFind est une chaine vide alors on réaffichera tous les livres
-        /// </summary>
-        /// <param name="toFind">String qui est ce que l'on souhaite rechercher</param>
-        public void SearchBook(String toFind)
-        {
-            if (toFind.Equals(""))
-            {
-                _mainWindow.DisplayAllBooks(IRepo.ReadBooks());
-            }
-            else
-            {
-                List<Book> booksList = FindBooks(toFind);
-                if (booksList.Capacity == 0)
-                {
-                    _mainWindow.DisplayError( "Aucun résultat");
-                }
-                _mainWindow.DisplayAllBooks(booksList);
-            }
-        }
+    /// <summary>
+    /// Méthode utilisée lorsque l'on arrête de lire un livre et qu'on revient à la liste de tous les livres
+    /// pour mettre à jour le statut dans la vue détaillée du livre (Commencer/Reprendre)
+    /// Utilise UpdateButtonDetailBook du MenuPresenter qui permet de mettre à jour la statut du livre
+    /// </summary>
+    /// <param name="isbn">string qui est l'isbn du livre dont on souhaite mettre à jour le statut</param>
+    public void UpdateSessionStatut(string isbn)
+    {
+        _menuPresenter.UpdateButtonDetailBook(isbn);
+    }
 
-        /// <summary>
-        /// Méthode qui permet de chercher les livres correspondant à la recherche encodée par l'utilisateur
-        /// </summary>
-        /// <param name="toFind">String qui est ce que l'on souhaite rechercher</param>
-        /// <returns></returns>
-        private List<Book> FindBooks(String toFind)
-        {
-            List<Book> findBooks = new List<Book>();
-            foreach (var book in IRepo.ReadBooks())
-            {
-                String bookTitle = book.getTitle().ToUpper();
-                toFind = toFind.ToUpper().Trim();
-                if (bookTitle.Contains(toFind) || book.getIsbn().getIsbnNumber().Equals(toFind))
-                {
-                    findBooks.Add(book);
-                }
-            }
-            return findBooks;
-        }
-        
-        /// <summary>
-        /// Méthode qui permet de vérifier que le fichier que le fichier existe bien et si c'est le cas qu'il n'est pas vide.
-        /// En cas d'erreur il affichera un message
-        /// </summary>
-        /// <returns>Boolean, true si une erreur est trouvée sinon false</returns>
-        public Boolean FindError()
-        {
-            string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "ue36", "q210208.json");
-            
-            if (!File.Exists(filePath))
-            {
-                _mainWindow.DisplayError( "/!\\ Le fichier n'existe pas /!\\ ");
-                return true;
-            }
-            
-            if(File.ReadAllText(filePath) == "")
-            {
-                _mainWindow.DisplayError("/!\\ Le fichier est vide /!\\ ");
-                return true;
-            }
+    /// <summary>
+    /// Méthode utilisée lorsque l'on se rend sur la Statistics
+    /// Utilise DisplayNumberSession et DisplayAllStatistics du StatisticsPresenter
+    /// pour afficher le nombre de livre avec une session en cours et afficher les statiques de
+    /// toutes les sessions en cours
+    /// </summary>
+    public void SwitchToStatistics()
+    {
+        _statisticsPresenter.DisplayNumberSession();
+        _statisticsPresenter.DisplayAllStatistics();
+    }
 
-            return false;
-        }
+    /// <summary>
+    /// Méthode qui permet d'afficher une notification à l'utilisateur
+    /// </summary>
+    /// <param name="severity">NotificationSeverity qui est le type de notification que l'on veut afficher</param>
+    /// <param name="title">string qui va être le titre de la notification</param>
+    /// <param name="message">string qui va être le message de la notification</param>
+    public void PushNotification(NotificationSeverity severity, string title, string message)
+    {
+        _notifications.Push(severity, title, message);
     }
 }

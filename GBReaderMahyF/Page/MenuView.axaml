@@ -1,0 +1,115 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="GBReaderMahyF.Page.MenuView">
+            
+        <StackPanel Background="#edf2f4">
+                
+                <!--TITRE --> 
+                <TextBlock  
+                        Padding="15"
+                        Background="#2b2d42"
+                        Foreground="#edf2f4"
+                        FontSize="35">
+                        Vos livres 
+                </TextBlock>    
+                
+                <!--NAVBAR--> 
+                <Grid ColumnDefinitions="350,140, 200" Margin="0 25">
+                        <TextBox x:Name="SearchText" 
+                                 Grid.Column="0" 
+                                 Margin=" 15 0" />
+                        
+                        
+                        <Button Grid.Column="1" 
+                                Click="Search_OnClick"
+                                HorizontalContentAlignment="Center" 
+                                Background="#2b2d42"
+                                Foreground="#edf2f4"
+                                Padding="5">
+                                Recherche un livre
+                        </Button>
+                        
+                        <Button Grid.Column="2" 
+                                Click="Statistics_OnClick"
+                                HorizontalContentAlignment="Center" 
+                                Background="#2b2d42"
+                                Foreground="#edf2f4"
+                                Padding="5">
+                                Consulter les statistiques
+                        </Button>
+                </Grid>
+                
+                
+                
+                <!--MAIN --> 
+                <Grid ColumnDefinitions="*, *">
+                        <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto"  Height="500">
+                                <WrapPanel x:Name="BooksContainer"></WrapPanel>
+                        </ScrollViewer>
+                        
+                        <!--ERRORMESSAGE --> 
+                        <TextBlock x:Name = "ErrorMessage" HorizontalAlignment="Center" FontSize="20" Foreground="#F9564F" />
+                        
+                        <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center">
+                                <TextBlock x:Name="DetailTitle" Foreground="#2b2d42" FontSize="20" Margin="15" IsVisible="False">
+                                        Détail du livre :
+                                </TextBlock>
+                                
+                                <StackPanel x:Name="DetailBookContainer" 
+                                            Margin="50 0"
+                                />
+                                
+                                <Border Background="#2b2d42"
+                                        BorderBrush="Black"
+                                        BorderThickness="3"
+                                        CornerRadius="15"
+                                        Padding="15"
+                                        >
+        
+                                        <StackPanel Orientation="Vertical" 
+                                                    Background="#2b2d42" 
+                                                    Spacing="15" 
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center" >
+            
+                                                <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Foreground="#edf2f4">Titre : </TextBlock> 
+                                                        <TextBlock x:Name ="Title" Foreground="#edf2f4" TextWrapping="Wrap" Width="450"></TextBlock>
+                                                </StackPanel>
+               
+                                                <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Foreground="#edf2f4"> Auteur : </TextBlock> 
+                                                        <TextBlock x:Name ="Author" Foreground="#edf2f4"></TextBlock>
+                                                </StackPanel>
+                
+                                                <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Foreground="#edf2f4">Isbn : </TextBlock> 
+                                                        <TextBlock x:Name ="Isbn" Foreground="#edf2f4">isbn</TextBlock>
+                                                </StackPanel>    
+            
+                                                <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Foreground="#edf2f4">Résumé : </TextBlock> 
+                                                        <TextBlock x:Name ="Resume" Foreground="#edf2f4" TextWrapping="Wrap" Width="450"></TextBlock>
+                                                </StackPanel>    
+            
+            
+                                                <StackPanel HorizontalAlignment="Center">
+                                                        <Button x:Name="StartOResumeButton"
+                                                                Click="StartBook_OnClick"
+                                                                Background="#edf2f4" 
+                                                                Foreground="#2b2d42" 
+                                                                Padding="7"></Button>
+                                                </StackPanel>
+            
+                                        </StackPanel>
+                                </Border>    
+                                
+                        </StackPanel>
+                </Grid>
+                
+        </StackPanel>
+   
+</UserControl>

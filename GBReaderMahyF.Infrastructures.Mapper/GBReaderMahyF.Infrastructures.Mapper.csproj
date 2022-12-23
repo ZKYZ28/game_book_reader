@@ -9,7 +9,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\GBReaderMahyF.Domains\GBReaderMahyF.Domains.csproj" />
-      <ProjectReference Include="..\GBReaderMahyF.Infrastructures.Dto\GBReaderMahyF.Infrastructures.Dto.csproj" />
     </ItemGroup>
 
     <ItemGroup>

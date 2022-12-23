@@ -6,6 +6,7 @@
         <!--Avalonia doesen't support TrimMode=link currently,but we are working on that https://github.com/AvaloniaUI/Avalonia/issues/6892 -->
         <TrimMode>copyused</TrimMode>
         <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+        <RootNamespace>GBReaderMahyF</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
         <None Remove=".gitignore" />
@@ -34,4 +35,19 @@
     <ItemGroup>
         <AdditionalFiles Include="../CodeMetricsConfig.txt" />
     </ItemGroup>
+    
+    <ItemGroup>
+      <Compile Update="Page\PageView.axaml.cs">
+        <DependentUpon>PageView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Control\BookView.axaml.cs">
+        <DependentUpon>BookView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
+
+      <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>8602;8603;8604;8618</NoWarn>
+  </PropertyGroup>
 </Project>

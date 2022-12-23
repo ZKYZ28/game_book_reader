@@ -1,80 +1,75 @@
-using System;
 using Avalonia.Controls;
-using GBReaderMahyF.Domains;
 using System.Collections.Generic;
-using Avalonia.Interactivity;
-using GBReaderMahyF.Presentations;
+using Avalonia.Controls.Notifications;
+using GBReaderMahyF.Presentations.Notification;
+using GBReaderMahyF.Presentations.Routes;
 
 namespace GBReaderMahyF
 {
-    public partial class MainWindow : Window, IDetailBookListener, IView
+    public partial class MainWindow : Window, IRouterToView, IShowNotifications
     {
-        private TextBlock _errorMessage;
-        private WrapPanel _booksContainer;
-        private StackPanel _detailBookContainer;
-        private TextBox _searchText;
-        private TextBlock _detailTitle;
+        private readonly WindowNotificationManager _notificationManager;
+        private readonly IDictionary<string, UserControl> _pages = new Dictionary<string, UserControl>();
+
         
-        private MainPresenter p;
-        
+        /// <summary>
+        /// Constructeur de la MainWindow
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
-            LocateControls();
-        }
-
-        public void setPresenter(MainPresenter mainPresenter)
-        {
-            this.p = mainPresenter;
-        }
-
-        private void LocateControls()
-        {
-            _searchText = this.FindControl<TextBox>("SearchText");
-            _errorMessage = this.FindControl<TextBlock>("ErrorMessage");
-            _booksContainer = this.FindControl<WrapPanel>("BooksContainer");
-            _detailBookContainer = this.FindControl<StackPanel>("DetailBookContainer");
-            _detailTitle = this.FindControl<TextBlock>("DetailTitle");
-        }
-
-        public void DisplayAllBooks(List<Book> BooksList)
-        {
-            foreach (var book in BooksList)
+            _notificationManager = new WindowNotificationManager(this)
             {
-                BookView bookV = new BookView();
-                bookV.SetBookInformation(book);
-                bookV.SetListener(this);
-                _booksContainer.Children.Add(bookV);
+                Position = NotificationPosition.BottomRight
+            };
+        }
+        
+        
+        /// <summary>
+        /// Méthode qui permet d'ajouter un UserControl à la MainWindow. La premier
+        /// UserControle ajouter sera celui affiché de base. 
+        /// </summary>
+        /// <param name="pageName">string qui est le nom de la page</param>
+        /// <param name="page">UserControl qui est la page que l'on veut ajouter</param>
+        internal void RegisterPage(string pageName, UserControl page)
+        {
+            _pages[pageName] = page;
+            if(Content == null)
+            {
+                Content = page;
             }
         }
-
-        public void DisplayFirstDetailBook()
+        
+        /// <summary>
+        /// Méthode qui permet de passer d'une page à l'autre 
+        /// </summary>
+        /// <param name="pageName">string qui est le nom de la page vers laquelle on souhaite se rendre</param>
+        public void GoTo(string pageName)
         {
-            _detailTitle.IsVisible = true;
-            DetailBookView detailBookView = new DetailBookView();
-            detailBookView.SetBookInformation(p.getIReop().ReadBooks()[0]);
-            _detailBookContainer.Children.Add(detailBookView); 
+            Content = _pages[pageName];
         }
         
-        public void Search_OnClick(object? sender, RoutedEventArgs e)
-        {
-            _errorMessage.Text = "";
-            _booksContainer.Children.Clear();
-            p.SearchBook(_searchText.Text);
-        }
-
-        public void DisplayError(String error)
-        {
-            _errorMessage.Text = error;
-            _errorMessage.IsVisible = true;
-        }
         
-        public void OnDetailBookSelected(object sender, Book book)
+        /// <summary>
+        /// Méthode qui permet d'afficher une notification à l'utilisateur
+        /// </summary>
+        /// <param name="severity">NotificationSeverity qui est le type de notification que l'on veut afficher</param>
+        /// <param name="title">string qui va être le titre de la notification</param>
+        /// <param name="message">string qui va être le message de la notification</param>
+        public void Push(NotificationSeverity severity, string title, string message)
         {
-            _detailBookContainer.Children.Clear();
-            DetailBookView detailBookView = new DetailBookView();
-            detailBookView.SetBookInformation(book);
-            _detailBookContainer.Children.Add(detailBookView); 
+            var notification = new Notification(title, message, severity switch
+            {
+                NotificationSeverity.Info => NotificationType.Information,
+                NotificationSeverity.Warning => NotificationType.Warning,
+                NotificationSeverity.Success => NotificationType.Success,
+                _ => NotificationType.Error,
+            });
+
+            if(this.IsVisible)
+            {
+                _notificationManager.Show(notification);
+            }        
         }
     }
 }

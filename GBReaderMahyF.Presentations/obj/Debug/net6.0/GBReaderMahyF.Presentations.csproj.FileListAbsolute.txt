@@ -17,7 +17,3 @@ C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Pres
 C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Presentations\bin\Debug\net6.0\GBReaderMahyF.Repositories.dll
 C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Presentations\bin\Debug\net6.0\GBReaderMahyF.Infrastructures.pdb
 C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Presentations\bin\Debug\net6.0\GBReaderMahyF.Repositories.pdb
-C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Presentations\bin\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.dll
-C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Presentations\bin\Debug\net6.0\GBReaderMahyF.Infrastructures.Dto.pdb
-C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Presentations\bin\Debug\net6.0\GBReaderMahyF.Infrastructures.Mapper.dll
-C:\Users\franc\Desktop\HELMO\AI\AI-2022-2023-C#\GBReaderMahyF\GBReaderMahyF.Presentations\bin\Debug\net6.0\GBReaderMahyF.Infrastructures.Mapper.pdb

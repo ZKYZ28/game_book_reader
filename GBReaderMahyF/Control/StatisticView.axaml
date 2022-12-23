@@ -1,0 +1,48 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="GBReaderMahyF.Control.StatisticView">
+    
+    <Border BorderBrush="Black"
+            BorderThickness="2"
+            CornerRadius="10"
+            Background="#2b2d42"
+            Margin="0 10">
+        
+        <Grid ColumnDefinitions="*, *, *, *" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1200">
+            <TextBlock  
+                x:Name="IsbnBook"
+                Grid.Row="0" Grid.Column="0"
+                Padding="10"
+                Foreground="#edf2f4"
+                FontSize="15">
+            </TextBlock> 
+            
+            <TextBlock  
+                x:Name="SessionStartDate"
+                Grid.Row="0" Grid.Column="1"
+                Padding="10"
+                Foreground="#edf2f4"
+                FontSize="15">
+            </TextBlock> 
+            
+            <TextBlock  
+                x:Name="SessionLastUpdateDate"
+                Grid.Row="0" Grid.Column="2"
+                Padding="10"
+                Foreground="#edf2f4"
+                FontSize="15">
+            </TextBlock> 
+            
+            <TextBlock  
+                x:Name="LastPage"
+                Grid.Row="0" Grid.Column="3"
+                Padding="10"
+                Foreground="#edf2f4"
+                FontSize="15">
+            </TextBlock> 
+        </Grid>
+    </Border>
+</UserControl>

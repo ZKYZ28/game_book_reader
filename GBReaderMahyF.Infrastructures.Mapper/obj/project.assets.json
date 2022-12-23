@@ -11,16 +11,6 @@
         "runtime": {
           "bin/placeholder/GBReaderMahyF.Domains.dll": {}
         }
-      },
-      "GBReaderMahyF.Infrastructures.Dto/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/GBReaderMahyF.Infrastructures.Dto.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/GBReaderMahyF.Infrastructures.Dto.dll": {}
-        }
       }
     }
   },
@@ -29,21 +19,16 @@
       "type": "project",
       "path": "../GBReaderMahyF.Domains/GBReaderMahyF.Domains.csproj",
       "msbuildProject": "../GBReaderMahyF.Domains/GBReaderMahyF.Domains.csproj"
-    },
-    "GBReaderMahyF.Infrastructures.Dto/1.0.0": {
-      "type": "project",
-      "path": "../GBReaderMahyF.Infrastructures.Dto/GBReaderMahyF.Infrastructures.Dto.csproj",
-      "msbuildProject": "../GBReaderMahyF.Infrastructures.Dto/GBReaderMahyF.Infrastructures.Dto.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "GBReaderMahyF.Domains >= 1.0.0",
-      "GBReaderMahyF.Infrastructures.Dto >= 1.0.0"
+      "GBReaderMahyF.Domains >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\franc\\.nuget\\packages\\": {}
+    "C:\\Users\\franc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -54,13 +39,20 @@
       "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\franc\\Desktop\\HELMO\\AI\\AI-2022-2023-C#\\GBReaderMahyF\\GBReaderMahyF.Infrastructures.Mapper\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -69,9 +61,6 @@
           "projectReferences": {
             "C:\\Users\\franc\\Desktop\\HELMO\\AI\\AI-2022-2023-C#\\GBReaderMahyF\\GBReaderMahyF.Domains\\GBReaderMahyF.Domains.csproj": {
               "projectPath": "C:\\Users\\franc\\Desktop\\HELMO\\AI\\AI-2022-2023-C#\\GBReaderMahyF\\GBReaderMahyF.Domains\\GBReaderMahyF.Domains.csproj"
-            },
-            "C:\\Users\\franc\\Desktop\\HELMO\\AI\\AI-2022-2023-C#\\GBReaderMahyF\\GBReaderMahyF.Infrastructures.Dto\\GBReaderMahyF.Infrastructures.Dto.csproj": {
-              "projectPath": "C:\\Users\\franc\\Desktop\\HELMO\\AI\\AI-2022-2023-C#\\GBReaderMahyF\\GBReaderMahyF.Infrastructures.Dto\\GBReaderMahyF.Infrastructures.Dto.csproj"
             }
           }
         }
@@ -101,7 +90,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
