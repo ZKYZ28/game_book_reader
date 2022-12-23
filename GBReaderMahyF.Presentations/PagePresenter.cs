@@ -93,7 +93,7 @@ public class PagePresenter
     {
         if (_manager.CurrentPage!.IsAEndPage())
         {
-            ReadSound(Path.Combine("..", "..", "..", "..", "Ressources", "bookClose.wav"));
+            
             if (!onInit)
             {
                 _manager.AllSessions.DeleteSession(_manager.CurrentBook!.IsbnNumber);
@@ -101,10 +101,10 @@ public class PagePresenter
             }
             _pageView.DisplayEndBook(true);
         }
-        else
-        {
-            ReadSound(Path.Combine("..", "..", "..", "..", "Ressources", "pageFlip.wav"));
-        }
+        
+        
+            
+        
     }
 
     /// <summary>
@@ -166,15 +166,5 @@ public class PagePresenter
     {
         _pageView.DisplayEndBook(false);
         InitPages();
-    }
-
-    /// <summary>
-    /// Méthode qui permet de lire un son
-    /// </summary>
-    /// <param name="path">string qui est le path vers le fichier wav</param>
-    private void ReadSound(string path)
-    {
-        System.Media.SoundPlayer player = new System.Media.SoundPlayer(path); 
-        player.Play();
     }
 }
