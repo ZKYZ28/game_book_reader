@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tm30SM9Gx5kGhQByM0MV/DLZO+npkxJyxZIi94ogSGz/FkWsBSIAFLBHm0OXH6yLWhg9qfRkgqvLvmJ+RTIKLQ==",
+  "dgSpecHash": "SKIIGzrFyjqmDTxjVyNNqrX3RhZCNu0o0MMJixzcLUXioj2LCrNB9G8AjplPMmYugQk+wj19Xhfow3ehK+Og/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\franc\\Desktop\\HELMO\\AI\\AI-2022-2023-C#\\GBReaderMahyF\\GBReaderMahyF.Tests\\GBReaderMahyF.Tests.csproj",
+  "projectFilePath": "C:\\Users\\franc\\Documents\\HELMO-deuxième\\Q1\\AI\\AI-2022-2023-C#\\GBReaderMahyF\\GBReaderMahyF.Tests\\GBReaderMahyF.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\franc\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
     "C:\\Users\\franc\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",

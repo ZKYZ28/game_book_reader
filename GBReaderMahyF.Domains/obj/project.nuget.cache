@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4//1gFysHOI6BJth4wLgVbaL2XeK+nLlX3f6CvVRLfS5AVFlId1yD7f8i7mznl/KXJN9OigdMyJLJbBc331QhA==",
+  "dgSpecHash": "bk1g3UXhPINSyxT8EQl2XaQh28SKXaGn3D0OKcNJzPWDV3oAzVDUNzIKHKcppzmfv2ICaGhqrVPHIf1mogqX7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\franc\\Desktop\\HELMO\\AI\\AI-2022-2023-C#\\GBReaderMahyF\\GBReaderMahyF.Domains\\GBReaderMahyF.Domains.csproj",
+  "projectFilePath": "C:\\Users\\franc\\Documents\\HELMO-deuxième\\Q1\\AI\\AI-2022-2023-C#\\GBReaderMahyF\\GBReaderMahyF.Domains\\GBReaderMahyF.Domains.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\franc\\.nuget\\packages\\lcom.analyzer\\1.0.0.1\\lcom.analyzer.1.0.0.1.nupkg.sha512",
     "C:\\Users\\franc\\.nuget\\packages\\ncss.analyzer\\1.0.0\\ncss.analyzer.1.0.0.nupkg.sha512"
